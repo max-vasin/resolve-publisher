@@ -1,8 +1,8 @@
 pipeline:
   write:
-    image: node:9
+    image: maxvasin/resolve-docker
     commands:
-      - echo hello > /data/test
+      - /scripts/register_nightly_build
 
 
     volumes:
