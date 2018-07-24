@@ -1,0 +1,8 @@
+pipeline:
+  write:
+    image: node:9
+    commands:
+      - echo hello > /data/test
+
+  volumes:
+    - /srv/ecs/resolve-publisher:/data
