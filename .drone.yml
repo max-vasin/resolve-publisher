@@ -3,6 +3,5 @@ pipeline:
     image: node:9
     commands:
       - echo hello > /data/test
-
-  volumes:
-    - /srv/ecs/resolve-publisher:/data
+    volumes:
+      - /srv/ecs/resolve-publisher:/data
